@@ -4,24 +4,9 @@
 
 To set up your PrestaShop LAMP environment, simply run:
 
-```sh
-git clone https://github.com/pvujic/prestashop-lamp
-cd prestashop-lamp
-sh install.sh
-```
-
-The script will prompt you for configuration options including:
-
-- Docker project name
-- PHP version
-- Database type
-- PrestaShop version
-
-Once completed, it will download and install PrestaShop along with the required dependencies.
-
-## SSL Certificate Setup
-
-### Windows Users
+### Requirements
+Make sure you have mkcert installed
+#### Mkcert - Windows Users
 
 1. Install Chocolatey by running the following command in PowerShell:
    ```powershell
@@ -48,9 +33,26 @@ Once completed, it will download and install PrestaShop along with the required 
    sudo cp ./prestashop.loc+3-key.pem /<lamp directory>/config/ssl/prestashop-lamp-key.pem
    ```
 
-### Linux / MacOS Users
+### Mkcert - Linux / MacOS Users
+```sh
+brew install mkcert
+mkcert -install
+```
+# Lamp Instalation
+```sh
+git clone https://github.com/pvujic/prestashop-lamp
+cd prestashop-lamp
+sh install.sh
+```
 
-No manual action is required. The installation script will generate and place the SSL certificates automatically.
+The script will prompt you for configuration options including:
+
+- Docker project name
+- PHP version
+- Database type
+- PrestaShop version
+
+Once completed, it will download and install PrestaShop along with the required dependencies.
 
 ## Running the Environment
 
