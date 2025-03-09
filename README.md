@@ -35,12 +35,13 @@ To set up your PrestaShop LAMP environment, simply run:
    sudo cp ./prestashop.loc+3-key.pem /<lamp directory>/config/ssl/prestashop-lamp-key.pem
    ```
 
-### Mkcert - Linux / MacOS Users
+#### Mkcert - Linux / MacOS Users
 ```sh
 brew install mkcert
 mkcert -install
 ```
-# Lamp Instalation
+
+## Lamp Instalation
 ```sh
 git clone https://github.com/pvujic/prestashop-lamp
 cd prestashop-lamp
