@@ -5,7 +5,9 @@
 To set up your PrestaShop LAMP environment, simply run:
 
 ### Requirements
-Make sure you have mkcert installed
+- mkcert
+- docker
+  
 #### Mkcert - Windows Users
 
 1. Install Chocolatey by running the following command in PowerShell:
