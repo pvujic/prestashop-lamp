@@ -38,7 +38,7 @@ Once completed, it will download and install PrestaShop along with the required 
    ```powershell
    mkcert -install
    ```
-4. Move to your preferred directory (e.g., `C:\Users\Administrator`) and generate SSL certificates:
+4. Generate SSL certificates:
    ```powershell
    mkcert prestashop.loc 127.0.0.1 localhost ::1
    ```
